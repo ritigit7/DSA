@@ -1,19 +1,24 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class L_198_House_Robber {
 
     public static void main(String[] args) {
-        System.out.println("->" + rob(new int[] { 1, 2, 3, 1 }));
-        System.out.println("->" + rob(new int[] { 2, 1, 1, 2 }));
-        System.out.println("->" + rob(new int[] { 2, 7, 9, 3, 1 }));
-        System.out.println("->" + rob(new int[] { 1, 2 }));
-        System.out.println("->" + rob(new int[] { 0, 0, 0 }));
+        System.out.println("->" + rob3(new int[] { 1, 2, 3, 1 }));
+        System.out.println("->" + rob3(new int[] { 2, 1, 1, 2 }));
+        System.out.println("->" + rob3(new int[] { 2, 7, 9, 3, 1 }));
+        System.out.println("->" + rob3(new int[] { 1, 2 }));
+        System.out.println("->" + rob3(new int[] { 0, 0, 0 }));
+        System.out.println("->" + rob3(new int[] { 1, 3, 1 }));
+        System.out.println("->" + rob3(new int[] { 1, 2, 1, 0 }));
+        System.out.println("->" + rob3(new int[] { 1, 2, 1, 1 }));
     }
 
-    static String rob(int[] nums) {
+    static int rob(int[] nums) {
         int len = nums.length;
         int sum = 0;
-        int sum2 = 0;
         int pre = 0;
-        int pre2 = 0;
         if (len > 2) {
             sum = nums[0];
             int i = 2;
@@ -30,22 +35,8 @@ public class L_198_House_Robber {
         } else {
             sum = mx(nums, 0)[0];
         }
-        if (len > 2) {
-            int i2 = 1;
-            sum2 = nums[1];
-            while (i2 < len) {
-                int[] temp2 = mx(nums, i2);
-                sum2 = sum2 + temp2[0];
-                i2 = temp2[1];
-                if (sum2 == pre2) {
-                    break;
-                }
-                pre2 = sum2;
-            }
-        } else {
-            sum2 = mx(nums, 0)[0];
-        }
-        return "sum:" + sum + " sum2:" + sum2;
+
+        return sum;
     }
 
     static int[] mx(int[] nums, int start) {
@@ -58,5 +49,41 @@ public class L_198_House_Robber {
             }
         }
         return new int[] { max, max_index };
+    }
+
+    static int rob2(int[] nums) {
+        int len = nums.length;
+        int sum = 0;
+        ArrayList<Integer> aList = new ArrayList<>();
+        for (int i = 0; i < len; i++) {
+            aList.add(nums[i]);
+        }
+        System.out.println(aList);
+        Arrays.sort(nums);
+        for (int i = len - 1; i >= 0; i--) {
+            if (aList.contains(nums[i])) {
+                sum = sum + nums[i];
+                if (len > aList.indexOf(nums[i])) {
+                    aList.remove(aList.indexOf(nums[i]));
+                }
+                if (0 < aList.indexOf(nums[i])) {
+                    aList.remove(aList.indexOf(nums[i]));
+                }
+            }
+        }
+        System.out.println(aList);
+        return sum;
+    }
+
+    static int rob3(int[] nums) {
+        int pre1 = 0;
+        int pre2 = 0;
+        int len = nums.length;
+        for (int i = 0; i < len; i++) {
+            int dp = Math.max(pre1, pre2 + nums[i]);
+            pre2 = pre1;
+            pre1 = dp;
+        }
+        return pre1;
     }
 }
