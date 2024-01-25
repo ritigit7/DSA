@@ -50,7 +50,7 @@ public class L_1457_Pseudo_Palindromic {
                 wrong++;
             }
         }
-        if (wrong == 1 && sub.size() > 2 || sub.size() == 1) {
+        if ((wrong == 1 || wrong == 0) && sub.size() > 2 || sub.size() == 1) {
             ans++;
         }
         System.out.println(wrong);
