@@ -1,32 +1,30 @@
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.HashMap;
 
 public class L_1207_Unique_Number {
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 2, 1, 1, 3, 3, 3 };
-        // int[] arr = { 1, 1, 1, 2, 2, 3 };
-        System.out.println(uniqueOccurrences(arr));
+        System.out.println(uniqueOccurrences(new int[] { 1, 2 }));
+        // System.out.println(uniqueOccurrences(new int[] { -4, 3, 3 }));
+        // System.out.println(uniqueOccurrences(new int[] { 1, 1, 1, 2, 2, 3, 3, 3 }));
+        // System.out.println(uniqueOccurrences(new int[] { 1, 1, 1, 2, 2, 3 }));
     }
 
     static boolean uniqueOccurrences(int[] arr) {
-        Arrays.sort(arr);
-        ArrayList<Integer> aList = new ArrayList<>();
-        int len = arr.length - 1;
+        HashMap<Integer, Integer> map = new HashMap<>();
+        HashMap<Integer, Integer> map2 = new HashMap<>();
 
-        int t = 1;
-        int temp = 0;
-        for (int i = 0; i < len; i++) {
-            if (arr[i] == arr[i + 1]) {
-                t++;
+        for (int i : arr) {
+            if (!map.containsKey(i)) {
+                map.put(i, 1);
             } else {
-                aList.add(t);
-                t = 1;
-                temp = 1;
+                map.put(i, map.get(i) + 1);
             }
         }
-        aList.add(temp);
+        System.out.println(map);
+        for (int t : map.values()) {
+            map2.put(t, 0);
+        }
+        System.out.println(map2);
+        return map.size() == map2.size();
 
-        System.out.println(aList);
-        return true;
     }
 }
