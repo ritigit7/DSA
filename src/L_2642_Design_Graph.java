@@ -71,7 +71,7 @@ class Graph {
         Node n1 = nodeMap.get(node1);
         Node n2 = nodeMap.get(node2);
         System.out.println(n1.val + "," + n2.val);
-        
+
         return 0;
     }
 }
