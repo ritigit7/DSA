@@ -42,7 +42,7 @@ public class Graph_P {
 
         for (int i = 0; i < graph[3].size(); i++) {
             Edge e = graph[3].get(i);
-            System.out.println(e.src + "," + e.dest);
+            System.out.println(e.src + "," + e.dest + "," + e.wt);
 
         }
     }
