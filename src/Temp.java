@@ -11,19 +11,20 @@
 // import java.util.TreeMap;
 // import java.util.HashMap;
 
-import java.util.HashMap;
+// import java.util.HashMap;
 // import java.util.Map;
+// import java.util.TreeMap;
 
 public class Temp {
     static int t;
 
     public static void main(String[] args) {
-        HashMap<Integer, Integer> map = new HashMap<>();
-        map.put(1, null);
-        map.put(3, null);
-        map.put(2, null);
-        System.out.println(map);
     }
+    // HashMap<Integer, Integer> map = new HashMap<>();
+    // map.put(1, null);
+    // map.put(3, null);
+    // map.put(2, null);
+    // System.out.println(map);
 
     // int[][] matrix = { { 2, 1 }, { 6, 5 }, { 7, 8 } };
     // t = 5;
