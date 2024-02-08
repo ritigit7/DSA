@@ -37,6 +37,7 @@ public class Graph_P {
     }
 
     public static void main(String[] args) {
+        @SuppressWarnings("unchecked")
         ArrayList<Edge> graph[] = new ArrayList[5];
         createGraph(graph);
 
