@@ -2,9 +2,12 @@ public class L_1463_Cherry_Pickup {
 
     class Solution {
 
+        Integer dp[][][];
+
         public int cherryPickup(int[][] grid) {
             int rows = grid.length;
             int cols = grid[0].length;
+            dp = new Integer[rows + 1][cols + 1][cols + 1];
             return helper(grid, 0, 0, cols - 1);
         }
 
@@ -15,6 +18,10 @@ public class L_1463_Cherry_Pickup {
 
             if (currRow == grid.length)
                 return 0; // lascurrRow
+
+            if (dp[currRow][robotACol][robotBCol] != null) {
+                return dp[currRow][robotACol][robotBCol];
+            }
 
             int result = 0;
             result += grid[currRow][robotACol];
@@ -34,7 +41,7 @@ public class L_1463_Cherry_Pickup {
             }
 
             result += max; // add maximum result
-            return result;
+            return dp[currRow][robotACol][robotBCol] = result;
         }
     }
 
@@ -42,5 +49,4 @@ public class L_1463_Cherry_Pickup {
         L_1463_Cherry_Pickup.Solution ob = new L_1463_Cherry_Pickup().new Solution();
         System.out.println(ob.cherryPickup(new int[][] { { 3, 1, 1 }, { 2, 5, 1 }, { 1, 5, 5 }, { 2, 1, 1 } }));
     }
-
 }
