@@ -1,15 +1,20 @@
+import java.util.ArrayList;
+
 public class L_5_Longest_Palindromic {
     class Solution {
+        static int l = 0;
+        static ArrayList<String> aList = new ArrayList<>();
 
         public String longestPalindrome(String s) {
             String dp[][] = new String[s.length()][s.length()];
-            String ans = fn(s, 0, s.length() - 1, dp, 0);
-            // for (String[] strings : dp) {
-            // for (String strings2 : strings) {
-            // System.out.print(strings2 + " ");
-            // }
-            // System.err.println();
-            // }
+            String ans = "";
+            fn(s, 0, s.length() - 1, dp, 0);
+            for (String str : aList) {
+                if (str.length() == l) {
+                    ans = str;
+                    System.out.println(str);
+                }
+            }
             return ans;
         }
 
@@ -20,17 +25,17 @@ public class L_5_Longest_Palindromic {
             }
 
             if (isPalindrome(str, start, end)) {
-                // if (len < (end + 1) - start) {
-                System.out.print(len);
-                len = (end + 1) - start;
-                // }
+                aList.add(str.substring(start, end + 1));
+                if (l < end + 1 - start) {
+                    l = end + 1 - start;
+                    System.out.println(l);
+                }
                 return dp[start][end] = str.substring(start, end + 1);
             }
-            int l = len;
             if (start < end) {
                 fn(str, start, end - 1, dp, l);
                 fn(str, start + 1, end, dp, l);
-                System.out.println(start + "," + end);
+                System.out.println(start + "," + end + " len:" + l);
             }
             return dp[start][end];
         }
