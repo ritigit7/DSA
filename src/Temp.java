@@ -11,14 +11,29 @@
 // import java.util.TreeMap;
 // import java.util.HashMap;
 
-// import java.util.HashMap;
+import java.util.HashMap;
 // import java.util.Map;
 // import java.util.TreeMap;
 
 public class Temp {
-    static int t;
 
     public static void main(String[] args) {
+
+        String str = "WWEQERQWQWWRWWERQWEQ";
+        System.out.println(str.length());
+        HashMap<Character, Integer> map = new HashMap<>();
+        for (int i = 0; i < str.length(); i++) {
+            map.put(str.charAt(i), map.getOrDefault(str.charAt(i), 0) + 1);
+        }
+        System.out.println(map);
+        int t = 0;
+        for (int i : map.values()) {
+            if (i > str.length() / 4) {
+                System.out.println(i);
+                t = t + (i - str.length() / 4);
+            }
+        }
+        System.out.println(t);
     }
     // HashMap<Integer, Integer> map = new HashMap<>();
     // map.put(1, null);

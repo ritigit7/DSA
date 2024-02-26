@@ -4,6 +4,7 @@ public class L_1642_Furthest_Building {
     class Solution {
         public int furthestBuilding(int[] heights, int bricks, int ladders) {
             PriorityQueue<Integer> p = new PriorityQueue<>((a, b) -> b - a);
+            System.out.println(p);
             return 0;
         }
     }
