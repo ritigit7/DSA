@@ -1,0 +1,602 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "BinaryTree_P",
+            "request": "launch",
+            "mainClass": "BinaryTree_P",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "CF_Theatre_Square",
+            "request": "launch",
+            "mainClass": "CF_Theatre_Square",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "CodeCeff",
+            "request": "launch",
+            "mainClass": "CodeCeff",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "First",
+            "request": "launch",
+            "mainClass": "First",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "Graph_P",
+            "request": "launch",
+            "mainClass": "Graph_P",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "Hashmap",
+            "request": "launch",
+            "mainClass": "Hashmap",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "Jackson_lib",
+            "request": "launch",
+            "mainClass": "Jackson_lib",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1",
+            "request": "launch",
+            "mainClass": "L_1",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_100_Same_Tree",
+            "request": "launch",
+            "mainClass": "L_100_Same_Tree",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1160_Find_Words",
+            "request": "launch",
+            "mainClass": "L_1160_Find_Words",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1207_Unique_Number",
+            "request": "launch",
+            "mainClass": "L_1207_Unique_Number",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1291_Sequential_Digits",
+            "request": "launch",
+            "mainClass": "L_1291_Sequential_Digits",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_12_Integer_to_Roman",
+            "request": "launch",
+            "mainClass": "L_12_Integer_to_Roman",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1347_Minimum_Number",
+            "request": "launch",
+            "mainClass": "L_1347_Minimum_Number",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_13_Roman_to_Integer",
+            "request": "launch",
+            "mainClass": "L_13_Roman_to_Integer",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1436_Destination_City",
+            "request": "launch",
+            "mainClass": "L_1436_Destination_City",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1457_Pseudo_Palindromic",
+            "request": "launch",
+            "mainClass": "L_1457_Pseudo_Palindromic",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1463_Cherry_Pickup",
+            "request": "launch",
+            "mainClass": "L_1463_Cherry_Pickup",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1481_Least_Number",
+            "request": "launch",
+            "mainClass": "L_1481_Least_Number",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_14_Longes_Common_Prefix",
+            "request": "launch",
+            "mainClass": "L_14_Longes_Common_Prefix",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_150_Evaluate_Reverse",
+            "request": "launch",
+            "mainClass": "L_150_Evaluate_Reverse",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1561_Maximum_Number_of_Coins",
+            "request": "launch",
+            "mainClass": "L_1561_Maximum_Number_of_Coins",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1578_Minimum_Time",
+            "request": "launch",
+            "mainClass": "L_1578_Minimum_Time",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1624_Largest_Substring",
+            "request": "launch",
+            "mainClass": "L_1624_Largest_Substring",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1630_Arithmetic_Subarrays",
+            "request": "launch",
+            "mainClass": "L_1630_Arithmetic_Subarrays",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1642_Furthest_Building",
+            "request": "launch",
+            "mainClass": "L_1642_Furthest_Building",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1685_Sum_of_Absolute_Differences",
+            "request": "launch",
+            "mainClass": "L_1685_Sum_of_Absolute_Differences",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_169_Majority_Element",
+            "request": "launch",
+            "mainClass": "L_169_Majority_Element",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1704_Determine",
+            "request": "launch",
+            "mainClass": "L_1704_Determine",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1750_Minimum_Length",
+            "request": "launch",
+            "mainClass": "L_1750_Minimum_Length",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1758_Minimum_Changes",
+            "request": "launch",
+            "mainClass": "L_1758_Minimum_Changes",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1759_Count_Number",
+            "request": "launch",
+            "mainClass": "L_1759_Count_Number",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1814_Count_Nice_Pairs",
+            "request": "launch",
+            "mainClass": "L_1814_Count_Nice_Pairs",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1845_Seat_Reservation_Manager",
+            "request": "launch",
+            "mainClass": "L_1845_Seat_Reservation_Manager",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1897_Redistribute_Characters",
+            "request": "launch",
+            "mainClass": "L_1897_Redistribute_Characters",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1913_Maximum_Product",
+            "request": "launch",
+            "mainClass": "L_1913_Maximum_Product",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_1930_Unique_Length",
+            "request": "launch",
+            "mainClass": "L_1930_Unique_Length",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_198_House_Robber",
+            "request": "launch",
+            "mainClass": "L_198_House_Robber",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_2",
+            "request": "launch",
+            "mainClass": "L_2",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_201_Bitwise_AND",
+            "request": "launch",
+            "mainClass": "L_201_Bitwise_AND",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_2108_Find_First",
+            "request": "launch",
+            "mainClass": "L_2108_Find_First",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_2125_Number_Laser",
+            "request": "launch",
+            "mainClass": "L_2125_Number_Laser",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_2147_Number_of_Ways_Divide",
+            "request": "launch",
+            "mainClass": "L_2147_Number_of_Ways_Divide",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_2149_Rearrange_Array",
+            "request": "launch",
+            "mainClass": "L_2149_Rearrange_Array",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_2225_Find_Players",
+            "request": "launch",
+            "mainClass": "L_2225_Find_Players",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_231_Power_of_Two",
+            "request": "launch",
+            "mainClass": "L_231_Power_of_Two",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_2353_Design_Food_Rating_System",
+            "request": "launch",
+            "mainClass": "L_2353_Design_Food_Rating_System",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_2385_Amount_of_Time",
+            "request": "launch",
+            "mainClass": "L_2385_Amount_of_Time",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_242_Valid_Anagram",
+            "request": "launch",
+            "mainClass": "L_242_Valid_Anagram",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_2482_Difference_Between_Ones",
+            "request": "launch",
+            "mainClass": "L_2482_Difference_Between_Ones",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_2642_Design_Graph",
+            "request": "launch",
+            "mainClass": "L_2642_Design_Graph",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_268_Missing_number",
+            "request": "launch",
+            "mainClass": "L_268_Missing_number",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_279_Perfect_Squares",
+            "request": "launch",
+            "mainClass": "L_279_Perfect_Squares",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_2864_Maximum_Odd",
+            "request": "launch",
+            "mainClass": "L_2864_Maximum_Odd",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_2870_Minimum_Number",
+            "request": "launch",
+            "mainClass": "L_2870_Minimum_Number",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_2_Add_Two_Numbers",
+            "request": "launch",
+            "mainClass": "L_2_Add_Two_Numbers",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_3",
+            "request": "launch",
+            "mainClass": "L_3",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_32_Longest_Valid_Parentheses",
+            "request": "launch",
+            "mainClass": "L_32_Longest_Valid_Parentheses",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_380_Insert_Delete",
+            "request": "launch",
+            "mainClass": "L_380_Insert_Delete",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_3_Longest_substring",
+            "request": "launch",
+            "mainClass": "L_3_Longest_substring",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_4",
+            "request": "launch",
+            "mainClass": "L_4",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_42_Trapping_Rain_Water",
+            "request": "launch",
+            "mainClass": "L_42_Trapping_Rain_Water",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_42_Trapping_Rain_Water_2",
+            "request": "launch",
+            "mainClass": "L_42_Trapping_Rain_Water_2",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_42_Trapping_Rain_Water_3",
+            "request": "launch",
+            "mainClass": "L_42_Trapping_Rain_Water_3",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_446_Arithmetic_Slices",
+            "request": "launch",
+            "mainClass": "L_446_Arithmetic_Slices",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_4_Median_of_Two",
+            "request": "launch",
+            "mainClass": "L_4_Median_of_Two",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_5",
+            "request": "launch",
+            "mainClass": "L_5",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_543_Diameter_of_Binary",
+            "request": "launch",
+            "mainClass": "L_543_Diameter_of_Binary",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_576_Out_of_Boundary",
+            "request": "launch",
+            "mainClass": "L_576_Out_of_Boundary",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_5_Longest_Palindromic",
+            "request": "launch",
+            "mainClass": "L_5_Longest_Palindromic",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_6",
+            "request": "launch",
+            "mainClass": "L_6",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_645_Set_Mismatch",
+            "request": "launch",
+            "mainClass": "L_645_Set_Mismatch",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_6_Zigzag_Conversion",
+            "request": "launch",
+            "mainClass": "L_6_Zigzag_Conversion",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_70Climbing_Stairs",
+            "request": "launch",
+            "mainClass": "L_70Climbing_Stairs",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_7_Reverse_Integer",
+            "request": "launch",
+            "mainClass": "L_7_Reverse_Integer",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_907_Sum_of_Subarray",
+            "request": "launch",
+            "mainClass": "L_907_Sum_of_Subarray",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_91_Decode_Ways",
+            "request": "launch",
+            "mainClass": "L_91_Decode_Ways",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_931_Minimum_Falling",
+            "request": "launch",
+            "mainClass": "L_931_Minimum_Falling",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_938_Range_Sum_of_BST",
+            "request": "launch",
+            "mainClass": "L_938_Range_Sum_of_BST",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "L_9_Palindrome_Number",
+            "request": "launch",
+            "mainClass": "L_9_Palindrome_Number",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "Linked_list",
+            "request": "launch",
+            "mainClass": "Linked_list",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "RItikSol",
+            "request": "launch",
+            "mainClass": "RItikSol",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "Temp",
+            "request": "launch",
+            "mainClass": "Temp",
+            "projectName": "DSA_cc4681f5"
+        }
+    ]
+}
