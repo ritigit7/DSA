@@ -14,29 +14,89 @@
 // import java.util.HashMap;
 // import java.util.Map;
 // import java.util.TreeMap;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Temp {
-
     public static void main(String[] args) {
+        List<String> liveMatches = fetchLiveMatches();
 
-        char[] c = new char[5];
-        System.out.println(c[0]);
-        // String str = "WWEQERQWQWWRWWERQWEQ";
-        // System.out.println(str.length());
-        // HashMap<Character, Integer> map = new HashMap<>();
-        // for (int i = 0; i < str.length(); i++) {
-        // map.put(str.charAt(i), map.getOrDefault(str.charAt(i), 0) + 1);
-        // }
-        // System.out.println(map);
-        // int t = 0;
-        // for (int i : map.values()) {
-        // if (i > str.length() / 4) {
-        // System.out.println(i);
-        // t = t + (i - str.length() / 4);
-        // }
-        // }
-        // System.out.println(t);
+        for (String match : liveMatches) {
+            System.out.println(match);
+        }
     }
+
+    public static List<String> fetchLiveMatches() {
+        List<String> liveMatches = new ArrayList<>();
+        HttpURLConnection connection = null;
+        BufferedReader reader = null;
+
+        try {
+            URL url = new URL("https://www.cricbuzz.com/cricket-match/live-scores");
+            connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
+            connection.connect();
+
+            StringBuilder response = new StringBuilder();
+            reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                response.append(line);
+            }
+
+            // Regular expression to extract live match information
+            String regex = "<div class=\"cb-scr-wll-chvrn cb-lv-scrs-col\">(.*?)</div>";
+            Pattern pattern = Pattern.compile(regex);
+            Matcher matcher = pattern.matcher(response.toString());
+
+            while (matcher.find()) {
+                String match = matcher.group(1).trim();
+                liveMatches.add(match);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (connection != null) {
+                connection.disconnect();
+            }
+        }
+
+        return liveMatches;
+    }
+    // public static void main(String[] args) {
+
+    // char[] c = new char[5];
+    // System.out.println(c[0]);
+    // String str = "WWEQERQWQWWRWWERQWEQ";
+    // System.out.println(str.length());
+    // HashMap<Character, Integer> map = new HashMap<>();
+    // for (int i = 0; i < str.length(); i++) {
+    // map.put(str.charAt(i), map.getOrDefault(str.charAt(i), 0) + 1);
+    // }
+    // System.out.println(map);
+    // int t = 0;
+    // for (int i : map.values()) {
+    // if (i > str.length() / 4) {
+    // System.out.println(i);
+    // t = t + (i - str.length() / 4);
+    // }
+    // }
+    // System.out.println(t);
+    // }
     // HashMap<Integer, Integer> map = new HashMap<>();
     // map.put(1, null);
     // map.put(3, null);
