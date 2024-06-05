@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "L_1002_Find_Common",
+            "request": "launch",
+            "mainClass": "L_1002_Find_Common",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
             "name": "L_452_Minimum_Number",
             "request": "launch",
             "mainClass": "L_452_Minimum_Number",
