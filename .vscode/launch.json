@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "L_648_Replace_word",
+            "request": "launch",
+            "mainClass": "L_648_Replace_word",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
+            "name": "GeneticAlgorithm",
+            "request": "launch",
+            "mainClass": "GeneticAlgorithm",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
             "name": "L_1002_Find_Common",
             "request": "launch",
             "mainClass": "L_1002_Find_Common",
