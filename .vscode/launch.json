@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "L_41122_Relative_Sort_Array",
+            "request": "launch",
+            "mainClass": "L_41122_Relative_Sort_Array",
+            "projectName": "DSA_cc4681f5"
+        },
+        {
+            "type": "java",
             "name": "L_648_Replace_word",
             "request": "launch",
             "mainClass": "L_648_Replace_word",

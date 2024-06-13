@@ -14,16 +14,41 @@
 // import java.util.HashMap;
 // import java.util.Map;
 // import java.util.TreeMap;
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.TreeMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Temp {
+    static int findPlatform(int arr[], int dep[], int n) {
+        HashMap<String, Integer> map = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            map.put(dep[i], arr[i]);
+        }
+        TreeMap<String, Integer> sortedMap = new TreeMap<>(map);
+        int count = 0;
+        int temp;
+        int len = 0;
+        for (Map.Entry<String, Integer> entry : sortedMap.entrySet()) {
+            if (len > 0) {
+                if (sortedMap.get(entry) < temp) {
+                    count++;
+                }
+            }
+            temp = entry;
+            len++;
+        }
+        return count;
+
+    }
+
     public static void main(String[] args) {
         List<String> liveMatches = fetchLiveMatches();
 
